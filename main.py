@@ -1,5 +1,17 @@
-from DataLoader.Preprocessor import Preprocessor
+from Recorder.VideoRecorder import *
+from Models.ChatBot.ArabicChatBot import ArabicChatBot
 
-p = Preprocessor("D:/NTI-FinalProject/dataset_raw", "Dataset")
-p.read_audio("D:\\NTI-FinalProject\\dataset_raw\\1.wav", "D:\\NTI-FinalProject\\dataset_raw\\wave_files\\1.wav")
-# p.prepare_data()
+if __name__ == "__main__":
+    filename = "Default_user"
+    file_manager(filename)
+    chatbot = ArabicChatBot('./files/hf.env')
+    start_AVrecording(filename)
+    time.sleep(50)
+    stop_AVrecording(filename)
+
+    # video2rec =
+    # speech2text =
+    # x = speech2text w video2rec
+
+    response = chatbot.respond(x)
+    print(response)

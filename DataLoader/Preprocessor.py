@@ -42,8 +42,9 @@ class Preprocessor:
         return times, labels
 
     def read_audio(self, input_audio_path, output_audio_path):
-        obj = wave.open(input_audio_path, 'rb')
-        return obj
+        ffmpeg.input(input_audio_path).output(output_audio_path).run()
+        audio = AudioSegment.from_file(output_audio_path)
+        return audio
 
     def crop_audio(self, audio, start_time, end_time):
         cropped_audio = audio[start_time * 1000: end_time * 1000]
@@ -73,8 +74,6 @@ class Preprocessor:
             transcript = self.read_transcript(os.path.join(self.input_path, transcript_path))
             audio_path = os.path.join(self.input_path, audio_file_name)
             out_path = os.path.join(self.input_path, "wave_files", audio_file_name)
-            print(audio_path)
-            print(out_path)
             audio = self.read_audio(audio_path, out_path)
 
             times, labels = self.extract_samples(transcript)
