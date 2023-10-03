@@ -10,13 +10,12 @@ import os
 class VideoRecorder():
     # Video class based on openCV
     def __init__(self):
-
         self.open = True
         self.device_index = 0
         self.fps = 6  # fps should be the minimum constant rate at which the camera can
         self.fourcc = "MJPG"  # capture images (with no decrease in speed over time; testing is required)
         self.frameSize = (640, 480)  # video formats and sizes also depend and vary according to the camera used
-        self.video_filename = "temp_video.avi"
+        self.video_filename = "temp/temp_video.avi"
         self.video_cap = cv2.VideoCapture(self.device_index)
         self.video_writer = cv2.VideoWriter_fourcc(*self.fourcc)
         self.video_out = cv2.VideoWriter(self.video_filename, self.video_writer, self.fps, self.frameSize)
@@ -79,9 +78,9 @@ class AudioRecorder():
         self.open = True
         self.rate = 44100
         self.frames_per_buffer = 1024
-        self.channels = 2
+        self.channels = 1
         self.format = pyaudio.paInt16
-        self.audio_filename = "temp_audio.wav"
+        self.audio_filename = "temp/temp_audio.flac"
         self.audio = pyaudio.PyAudio()
         self.stream = self.audio.open(format=self.format,
                                       channels=self.channels,
@@ -198,14 +197,14 @@ def stop_AVrecording(filename):
 def file_manager(filename):
     local_path = os.getcwd()
 
-    if os.path.exists(str(local_path) + "/temp_audio.wav"):
-        os.remove(str(local_path) + "/temp_audio.wav")
+    if os.path.exists(str(local_path) + "/temp/temp_audio.flac"):
+        os.remove(str(local_path) + "/temp/temp_audio.flac")
 
-    if os.path.exists(str(local_path) + "/temp_video.avi"):
-        os.remove(str(local_path) + "/temp_video.avi")
+    if os.path.exists(str(local_path) + "/temp/temp_video.avi"):
+        os.remove(str(local_path) + "/temp/temp_video.avi")
 
     if os.path.exists(str(local_path) + "/temp_video2.avi"):
-        os.remove(str(local_path) + "/temp_video2.avi")
+        os.remove(str(local_path) + "/temp/temp_video2.avi")
 
     if os.path.exists(str(local_path) + "/" + filename + ".avi"):
         os.remove(str(local_path) + "/" + filename + ".avi")

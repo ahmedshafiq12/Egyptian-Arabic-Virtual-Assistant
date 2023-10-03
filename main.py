@@ -1,17 +1,12 @@
-from Recorder.VideoRecorder import *
-from Models.ChatBot.ArabicChatBot import ArabicChatBot
+from PyQt5 import QtCore, QtGui, QtWidgets
+from GUI.GUI import Ui_MainWindow
+import sys
+
 
 if __name__ == "__main__":
-    filename = "Default_user"
-    file_manager(filename)
-    chatbot = ArabicChatBot('./files/hf.env')
-    start_AVrecording(filename)
-    time.sleep(50)
-    stop_AVrecording(filename)
-
-    # video2rec =
-    # speech2text =
-    # x = speech2text w video2rec
-
-    response = chatbot.respond(x)
-    print(response)
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
