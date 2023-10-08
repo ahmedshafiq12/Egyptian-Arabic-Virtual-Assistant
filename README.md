@@ -19,7 +19,8 @@ Wise Man employs the HuBERT Model for Arabic speech recognition. The ASR model i
 
 The virtual assistant architecture consists of three main components: emotion recognition, speech-to-text recognition, and chatbot. The speech-to-text recognition module utilizes the HuBERT model, which is a large Arabic Egyptian language model trained specifically for understanding Egyptian Arabic accents. The chatbot component generates responses based on user queries using the HugChat API, which leverages Google Translate API for translation. The emotion recognition module employs the VGG19 model to analyze video inputs and detect facial expressions associated with various emotions. The user interface allows users to interact with the assistant through video, audio, and chat "text" inputs.
 
-![WiseMan PipeLine](https://github.com/theonlyshafiq/NTI-FinalProject/assets/91796651/9b90ddee-85d2-4601-9f55-10ab02963731)
+![WiseMan PipeLine](https://github.com/theonlyshafiq/NTI-FinalProject/assets/91796651/d4c4a3ea-f4cb-419a-9088-15e5a93783c2)
+
 
 
 **In the project architecture, the following pipeline is incorporated:**
