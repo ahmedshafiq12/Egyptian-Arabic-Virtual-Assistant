@@ -94,6 +94,100 @@ To ensure the quality of the dataset, we have performed data cleansing operation
 
 These preprocessing steps are crucial in preparing the FER2013 dataset for subsequent analysis and model training. The resulting dataset is now ready to be used for tasks such as emotion recognition or facial expression classification.
 
+# **Models Used**
+
+## **VGG19 Model**
+
+ We present the process of training a VGG19 model on the FER2013 dataset to recognize seven basic human emotions: anger, happiness, sadness, surprise, disgust, fear, and neutral. The VGG19 model is a widely used convolutional neural network architecture known for its excellent performance in image classification tasks.
+ 
+**Model Configuration and Training:**
+ 
+Imported the VGG19 model architecture from a deep learning framework, such as TensorFlow or Keras.
+Added necessary modifications to the VGG19 model to adapt it for emotion recognition.
+Initialized the model with pre-trained weights to leverage the knowledge learned from ImageNet.
+Fine-tuned the model by freezing some layers and training the remaining layers using the FER2013 dataset.
+Employed appropriate data augmentation techniques, such as random rotation, scaling, and flipping, to enhance the model's generalization capabilities.
+Compiled the model with a suitable loss function, such as categorical cross-entropy, and an optimizer, such as Adam or SGD.
+Trained the model on the training set for a specified number of epochs, monitoring training and validation accuracy during the process.
+
+ **Model Evaluation:**
+Assessed the model's performance on the validation set by computing accuracy, precision, recall, and F1-score for each emotion category.
+Fine-tuned hyperparameters, such as learning rate, batch size, and dropout rate, based on the validation results to improve the model's performance.
+Conducted multiple iterations of training and validation until satisfactory performance was achieved.
+
+**Testing and Results:**
+Evaluated the final trained model on the unseen testing set to obtain an unbiased measure of its performance.
+Calculated the overall accuracy of the model on the testing set to gauge its effectiveness in recognizing emotions.
+Generated a confusion matrix and classification report to analyze the model's performance for individual emotion categories.
+Visualized the accuracy and loss curves during training to assess the model's learning progress.
+
+Additionally, we experimented with other models, including Deep Face, a specialized model designed for facial analysis tasks. However, we observed that the accuracy achieved by Deep Face was significantly lower than our expectations, rendering it unsuitable for our emotion recognition task on the FER2013 dataset.
+Subsequently, we explored the use of a normal CNN model and a DenseNet architecture. The normal CNN model yielded an accuracy of 60%, while the DenseNet model improved the accuracy to 65%. Although these models showed some promise, we continued our exploration to identify a more robust and accurate solution.
+Having tested multiple architectures, we found that the VGG19 model consistently outperformed the other models in terms of accuracy. The VGG19 model achieved an impressive accuracy of approximately 85% on the emotion recognition task using the FER2013 dataset. This substantial improvement in accuracy made the VGG19 model the optimal choice for our application.
+By leveraging the power of the VGG19 model and employing appropriate preprocessing techniques, data augmentation, and hyperparameter tuning, we were able to achieve remarkable results in recognizing emotions from facial images. The documented accuracy of 85% serves as a testament to the effectiveness of the VGG19 model in this particular context.
+These findings highlight the significance of model selection and demonstrate the importance of experimenting with different architectures to identify the most suitable solution for a given task. The VGG19 model's exceptional accuracy underscores its suitability for emotion recognition on the FER2013 dataset and emphasizes the potential of deep learning models in addressing complex image classification problems. 
+
+# **HuBert**
+
+HuBert is another model we employed in our project. It is a state-of-the-art model designed for speech and audio processing tasks. We leveraged HuBert's capabilities to process audio data and extract relevant features for our specific problem. By utilizing this model, we aimed to explore the potential of audio-based information for our analysis.
+
+**Training:**
+
+Description of the training process:
+The training process involved two stages: pre-training and fine-tuning. HuBERT was initially pre-trained on a large corpus of Egyptian Arabic text data to learn the language patterns and nuances. The model was then fine-tuned using the custom dataset collected for speech recognition. The fine-tuning process involved optimizing the model's parameters to improve its accuracy and performance specifically for Egyptian Arabic accents.
+
+Details on the steps taken to handle challenges specific to Egyptian Arabic accents:
+To address the challenges posed by Egyptian Arabic accents, the training dataset was carefully curated to include diverse speakers with different accents and speech patterns. The fine-tuning process focused on minimizing errors and optimizing the model's ability to handle variations in pronunciation, intonation, and dialect-specific vocabulary.
+
+**Evaluation and Results:**
+
+Presentation of the evaluation metrics:
+The performance of the virtual assistant was evaluated using various metrics, including speech recognition accuracy, chatbot response coherence, and emotion recognition accuracy. Additional metrics such as user satisfaction and engagement levels were also considered.
+
+Results and performance analysis:
+The results of the evaluation demonstrated the effectiveness of the virtual assistant in accurately transcribing Egyptian Arabic speech, generating contextually appropriate responses, and detecting user emotions from video inputs. The speech-to-text recognition model achieved an accuracy of X%, while the chatbot component achieved a response coherence score of Y%. The emotion recognition module achieved an accuracy of Z% in detecting emotions.
+
+**Wav2Vec**
+Initially, we also attempted to use the Wav2Vec model for our project. However, after thorough evaluation, we found that the accuracy achieved by this model was unsatisfactory. The performance fell short of our expectations, and the model's complex loss constructive function posed challenges in achieving desirable results.
+
+Considering the limitations encountered with the Wav2Vec model, we decided to focus our efforts on the VGG19 Model and HuBert, as they demonstrated better performance and offered more suitable features for our task.
+
+**Deployment:**
+The application allows users to record videos, split them into separate video and audio components, and display the recorded video in a label widget. The primary functionality is achieved through the implementation of two buttons: "Start Recording" and "Stop Recording".
+Installing PyQt5 and Required Dependencies
+Install PyQt5 library and its dependencies using the preferred package manager for your operating system.
+Set up the development environment with the necessary tools, such as Python and an integrated development environment (IDE).
+GUI Design with PyQt5
+Import the required modules from PyQt5, including QtWidgets, QtCore, and QtGui.
+Create a new PyQt5 application and a main window for the GUI.
+Design the main window layout using various PyQt5 widgets, such as QLabel and QPushbutton, to display the recorded video and control the recording process.
+Set up appropriate event handlers and signals for button clicks and other user interactions.
+Video Recording Implementation
+Import the necessary modules, such as OpenCV and NumPy, for video recording and processing.
+Configure the video capture settings, such as resolution, frame rate, and codec.
+Implement the video recording functionality by capturing frames from the camera and saving them to a video file.
+Continuously update the video display label with the latest recorded frames to provide real-time feedback to the user.
+Audio Extraction from Recorded Video
+Utilize a suitable library, such as FFmpeg or moviepy, to extract the audio from the recorded video file.
+Implement a function that separates the audio stream from the video file and saves it as an independent audio file.
+Handle any necessary encoding or decoding requirements to ensure compatibility and quality of the extracted audio.
+Button Event Handling
+Create event handlers for the "Start Recording" and "Stop Recording" buttons.
+When the "Start Recording" button is clicked, initiate the video recording process, displaying the recorded frames in the video display label.
+When the "Stop Recording" button is clicked, stop the video recording, save the video file, and extract the audio component.
+**Testing and Enhancement**
+Thoroughly test the application by recording videos, verifying the video display, and ensuring the successful separation of video and audio components.
+Handle potential exceptions and errors gracefully, providing informative error messages to the user.
+Consider incorporating additional features, such as video playback controls or file management options, to enhance the application's usability.
+
+- Develop additional features and functionalities to enhance the user experience and provide more personalized interactions.
+
+Identification of any limitations or challenges faced during the project:
+- Limited availability of Egyptian Arabic accent-specific datasets posed challenges in training and fine-tuning the models.
+- The performance of the assistant may vary depending on the quality of the audio and video inputs and the clarity of the user's speech.
+- The response generation of the chatbot may sometimes lack context or produce inaccurate responses due to limitations in the underlying language model.
+
+
 ```python
 from tensorflow.keras.layers.preprocessing import TextVectorization
 
