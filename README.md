@@ -75,7 +75,6 @@ By separating the audio from the video and utilizing the subtitles as labels, we
 The collected dataset serves as a valuable resource for training and evaluating our models, enabling them to achieve high accuracy and robustness in converting spoken Arabic language into written text.
 
 Here is a short sample of our collected dataset:
-
 | path | label |
 | ---  | ---   |
 |1_0_cropped.flac	| !مساء الخير، لو سمحت |
