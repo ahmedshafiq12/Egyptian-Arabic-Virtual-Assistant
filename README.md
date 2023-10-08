@@ -152,6 +152,35 @@ Initially, we also attempted to use the Wav2Vec model for our project. However, 
 
 Considering the limitations encountered with the Wav2Vec model, we decided to focus our efforts on the VGG19 Model and HuBert, as they demonstrated better performance and offered more suitable features for our task.
 
+
+# **Chatbot Using Hugchat API**
+
+In this project, we have developed a chatbot using the Hugchat API. This API has been instrumental in enabling interactive conversations with users and providing them with relevant information and assistance. Here are some key details about the API and its functionality:
+
+**Hugchat API Overview**
+
+The Hugchat API offers a comprehensive set of tools and capabilities for building chatbot applications. It provides a user-friendly interface to interact with the chatbot and facilitates seamless communication between the user and the system. The API handles the complex logic of processing user queries and generating appropriate responses.
+
+
+**LAMMA2 Model**
+For our chatbot implementation, we have employed the LAMMA2 model. This model is notable for its extensive parameter count, consisting of 70 billion parameters. It has been trained on a large corpus of data from Meta, ensuring a rich contextual understanding of diverse topics.
+
+**Language Limitations**
+The LAMMA2 model, on which our chatbot is built, is primarily trained on English text data. However, our chatbot is designed to provide assistance in Arabic. To bridge this language gap, we have integrated the Google Translate API into our system. We utilize this API to translate the input received from users, which is in Arabic, into English. The translated input is then fed into the LAMMA2 model to generate an appropriate response, which we subsequently translate back into Arabic using the Google Translate API.
+
+By incorporating the Google Translate API, we ensure that our chatbot can effectively communicate with users in Arabic while leveraging the capabilities of the LAMMA2 model, which is trained on English data.
+
+The combination of the Hugchat API, LAMMA2 model, and Google Translate API allows our chatbot to comprehend user queries, generate accurate responses, and provide assistance in Arabic, offering a seamless and user-friendly experience.
+
+Please note that the accuracy and quality of translations may depend on the Google Translate API and may vary in certain cases.
+
+
+
+
+
+
+
+
 **Deployment:**
 The application allows users to record videos, split them into separate video and audio components, and display the recorded video in a label widget. The primary functionality is achieved through the implementation of two buttons: "Start Recording" and "Stop Recording".
 Installing PyQt5 and Required Dependencies
