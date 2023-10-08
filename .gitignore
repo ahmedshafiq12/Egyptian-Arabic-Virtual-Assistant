@@ -161,3 +161,4 @@ cython_debug/
 /dataset_raw/
 /Dataset/
 /temp/
+/models/emotion_detection/model.h5
