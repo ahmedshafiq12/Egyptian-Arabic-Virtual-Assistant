@@ -11,7 +11,7 @@ Once Hakeem has analyzed both your facial expressions and transcribed your words
 - Accessible and Convenient: No need to schedule appointments or travel to a therapist's office. Hakeem is available whenever you need support, right from your own device.
 - Multi-Modal Analysis: By combining facial emotion recognition and speech-to-text conversion, Hakeem gains a holistic understanding of your emotional state and the content of your speech.
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Hakeem Demo <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Hakeem Demo <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
 **Important Disclaimer**: Hakeem is an AI-based virtual therapist designed to assist individuals in their mental health journey. However, it is not a substitute for professional medical or psychological advice. If you are experiencing severe mental health issues, please consult a qualified healthcare professional.
 
