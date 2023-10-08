@@ -110,7 +110,7 @@ Assessed the model's performance on the validation set by computing accuracy, pr
 Fine-tuned hyperparameters, such as learning rate, batch size, and dropout rate, based on the validation results to improve the model's performance.
 Conducted multiple iterations of training and validation until satisfactory performance was achieved.
 
-**Testing and Results**
+**VGG19 Testing and Results**
 Evaluated the final trained model on the unseen testing set to obtain an unbiased measure of its performance.
 Calculated the overall accuracy of the model on the testing set to gauge its effectiveness in recognizing emotions.
 Generated a confusion matrix and classification report to analyze the model's performance for individual emotion categories.
@@ -146,11 +146,8 @@ Here are some examples to see the difference before and after the fine-tuning:
 Details on the steps taken to handle challenges specific to Egyptian Arabic accents:
 To address the challenges posed by Egyptian Arabic accents, the training dataset was carefully curated to include diverse speakers with different accents and speech patterns. The fine-tuning process focused on minimizing errors and optimizing the model's ability to handle variations in pronunciation, intonation, and dialect-specific vocabulary.
 
-**HuBERT Evaluation and Results**
-Hakeem's performance was evaluated using various metrics, including speech recognition accuracy, chatbot response coherence, and emotion recognition accuracy. Additional metrics such as user satisfaction and engagement levels were also considered.
-
-**HuBERT Results and performance analysis**
-The results of the evaluation demonstrated the effectiveness of the virtual assistant in accurately transcribing Egyptian Arabic speech, generating contextually appropriate responses, and detecting user emotions from video inputs. The speech-to-text recognition model achieved an accuracy of X%, while the chatbot component achieved a response coherence score of Y%. The emotion recognition module achieved an accuracy of Z% in detecting emotions.
+**Results and Performance Analysis**
+The results of the evaluation demonstrated the effectiveness of Hakeem in accurately transcribing Egyptian Arabic speech, generating contextually appropriate responses, and detecting user emotions from video inputs. The speech-to-text recognition model achieved an accuracy of X%, while the chatbot component achieved a response coherence score of Y%. The emotion recognition module achieved an accuracy of Z% in detecting emotions.
 
 **Wav2Vec**
 Initially, we also attempted to use the Wav2Vec model for Hakeem. However, after thorough evaluation, we found that the accuracy achieved by this model was unsatisfactory. The performance fell short of our expectations, and the model's complex constructive loss function posed challenges in achieving desirable results.
@@ -174,6 +171,11 @@ By incorporating the Google Translate API, we ensure that our chatbot can effect
 The combination of the Hugchat API, LAMMA2 model, and Google Translate API allows our chatbot to comprehend user queries, generate accurate responses, and provide assistance in Arabic, offering a seamless and user-friendly experience.
 
 Please note that the accuracy and quality of translations may depend on the Google Translate API and may vary in certain cases.
+
+**Evaluation and Results**
+Hakeem's performance was evaluated using various metrics, including speech recognition accuracy, chatbot response coherence, and emotion recognition accuracy. Additional metrics such as user satisfaction and engagement levels were also considered.
+
+
 
 # **Deployment**
 
