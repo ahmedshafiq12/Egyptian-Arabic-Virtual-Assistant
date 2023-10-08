@@ -1,5 +1,5 @@
 # **Wise Man "حكيم" your Virtual Assistant**
-Emotion Classification and Automatic Speech Recognition (ASR) with HuBERT Model
+Emotion Classification and Automatic Speech Recognition (ASR) with HuBERT Model.
 
 ## **Introduction**
 
