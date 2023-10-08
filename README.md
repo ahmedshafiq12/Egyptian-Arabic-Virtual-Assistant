@@ -74,8 +74,20 @@ By separating the audio from the video and utilizing the subtitles as labels, we
 
 The collected dataset serves as a valuable resource for training and evaluating our models, enabling them to achieve high accuracy and robustness in converting spoken Arabic language into written text.
 
+Here is a short sample of our collected dataset:
+
+| path | label |
+| ---  | ---   |
+|1_0_cropped.flac	| !مساء الخير، لو سمحت |
+|1_1_cropped.flac	| !لو سمحت |
+|1_2_cropped.flac	| !لو سمحت |
+|1_3_cropped.flac	| !عايز إيه؟ |
+|1_4_cropped.flac	| ."أنا عايز "ليجو |
+
 # **Data Preprocessing**
-Gathered the FER2013 dataset, which contains facial images labeled with seven emotion categories. We have performed various preprocessing steps on the FER2013 dataset. These steps include rescaling, zooming, and data cleansing to ensure the data is suitable for further analysis and modeling. Preprocessed the dataset by resizing the images to a standard size and normalizing pixel values to improve model performance.
+We have 2 major datasets that Hakeem is trained on, **the FER2013 dataset** and **our collected YouTube dataset**. In our collected YouTube dataset, we have 2 columns; the first one contains the audio path, and the second one contains the written text that is being said in this audio. As we can see from the short sample above we have in the `label` column some non-helpful marks and special characters, so, as a preprocessing step we remove all non-alphabet characters since they don't add value or contribute to our model's predictions.  
+
+In the FER2013 dataset, which contains facial images labeled with seven emotion categories. We have performed various preprocessing steps on the FER2013 dataset. These steps include rescaling, zooming, and data cleansing to ensure the data is suitable for further analysis and modeling. Preprocessed the dataset by resizing the images to a standard size and normalizing pixel values to improve model performance.
 Split the dataset into training, validation, and testing sets to ensure an unbiased evaluation of the model's accuracy.
 
 **1. Rescaling**
@@ -115,6 +127,11 @@ Evaluated the final trained model on the unseen testing set to obtain an unbiase
 Calculated the overall accuracy of the model on the testing set to gauge its effectiveness in recognizing emotions.
 Generated a confusion matrix and classification report to analyze the model's performance for individual emotion categories.
 Visualized the accuracy and loss curves during training to assess the model's learning progress.
+
+| Confusion Matrix               | Loss-Accuracy               |
+| ---------------------- | ---------------------- |
+| ![confusion-matrix](https://github.com/theonlyshafiq/NTI-FinalProject/assets/90681796/97fbb486-e471-4bf3-9d37-d207469baab2) | ![loss-accuracy](https://github.com/theonlyshafiq/NTI-FinalProject/assets/90681796/a3909c18-82bf-4a1e-97cf-73607da0dc4b) |
+
 
 Additionally, we experimented with other models, including Deep Face, a specialized model designed for facial analysis tasks. However, we observed that the accuracy achieved by Deep Face was significantly lower than our expectations, rendering it unsuitable for our emotion recognition task on the FER2013 dataset.
 
