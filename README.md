@@ -181,7 +181,7 @@ Please note that the accuracy and quality of translations may depend on the Goog
 
 
 
-**Deployment:**
+# **Deployment:**
 The application allows users to record videos, split them into separate video and audio components, and display the recorded video in a label widget. The primary functionality is achieved through the implementation of two buttons: "Start Recording" and "Stop Recording".
 Installing PyQt5 and Required Dependencies
 Install PyQt5 library and its dependencies using the preferred package manager for your operating system.
