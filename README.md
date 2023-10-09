@@ -1,4 +1,4 @@
-# **"Hakeem | حكيم" - Empowering Minds, Healing Hearts**
+# **"Hakeem | حكيم" - Your trusted partner**
 Welcome to **Hakeem**, your new Egyptian-Arabic Virtual Assistant! Hakeem is designed to simplify your life. With advanced features and natural language processing, it helps manage tasks, provides recommendations, and keeps you organized. Our advanced AI system leverages the latest developments in computer vision, speech recognition, and natural language processing to create a comprehensive personalized, enjoyable and daily assistance experience.
 
 ## Berifly: How it Works
