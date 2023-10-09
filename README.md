@@ -1,5 +1,5 @@
 # **"Hakeem | حكيم" - Empowering Minds, Healing Hearts**
-Welcome to **Hakeem**, your new Egyptian-Arabic Virtual Therapist! Hakeem is here to revolutionize the way we approach mental health support by combining cutting-edge artificial intelligence technologies with the power of human connection. Hakeem is an innovative project designed to provide personalized therapy sessions in the comfort of your own home. Our advanced AI system leverages the latest developments in computer vision, speech recognition, and natural language processing to create a comprehensive virtual therapy experience.
+Welcome to **Hakeem**, your new Egyptian-Arabic Virtual Assistant! Hakeem is designed to simplify your life. With advanced features and natural language processing, it helps manage tasks, provides recommendations, and keeps you organized. Our advanced AI system leverages the latest developments in computer vision, speech recognition, and natural language processing to create a comprehensive personalized, enjoyable and daily assistance experience.
 
 ## Berifly: How it Works
 The magic begins when you share a video of yourself with Hakeem. Our intelligent system seamlessly splits the video frames from the audio track, paving the way for a deeper analysis of your emotions and words. The video frames are then passed through our state-of-the-art facial emotion recognizer, which meticulously studies your facial expressions to discern the range of emotions you're experiencing. Simultaneously, the audio signal is fed into our powerful speech-to-text model, which converts your spoken words into written text. 
@@ -7,18 +7,20 @@ The magic begins when you share a video of yourself with Hakeem. Our intelligent
 Once Hakeem has analyzed both your facial expressions and transcribed your words, it's time for the heart of the therapy session: the **empathetic conversation**. Hakeem's chatbot interface utilizes the combined insights from your emotions and words to initiate and guide a conversation tailored specifically to your needs. Our virtual therapist engages with you, offering insightful advice, compassionate support, and practical solutions to help you overcome challenges and improve your well-being.
 
 ## Features and Benefits
-- Personalized Therapy: Hakeem adapts to your unique needs, providing tailored therapy sessions that address your specific concerns.
-- Accessible and Convenient: No need to schedule appointments or travel to a therapist's office. Hakeem is available whenever you need support, right from your own device.
+- Personalized Assistant: Hakeem learns from your interactions and provides tailored recommendations, whether it's suggesting relevant content, local services, or personalized product recommendations.
+- Natural Language Processing: Hakeem understands and responds to your voice commands and inquiries, making interactions intuitive and effortless.
+- Task Management: It helps you stay organized by managing your schedule, setting reminders, and handling various tasks on your behalf.
+- Accessible and Convenient: No need to schedule appointments or travel. Hakeem is available whenever you need support, right from your own device.
 - Multi-Modal Analysis: By combining facial emotion recognition and speech-to-text conversion, Hakeem gains a holistic understanding of your emotional state and the content of your speech.
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Hakeem Demo <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
-**Important Disclaimer**: Hakeem is an AI-based virtual therapist designed to assist individuals in their mental health journey. However, it is not a substitute for professional medical or psychological advice. If you are experiencing severe mental health issues, please consult a qualified healthcare professional.
+**Important Disclaimer**: Hakeem is an AI-based virtual assistant designed to assist individuals in their mental health journey. However, it is not a substitute for professional medical or psychological advice. If you are experiencing severe mental health issues, please consult a qualified healthcare professional.
 
 So, now let's discover the magic behind **"Hakeem | حكيم"** and see the detailed overview of its components.
 
 # **Introduction**
-As we said, Hakeem is an Egyptian-Arabic Virtual Therapist based on two AI models: Emotion Classification and Automatic Speech Recognition (ASR). The Emotion Classification model is designed to classify facial images into seven emotion categories using the FER2013 dataset. The ASR model utilizes the HuBERT Model for Arabic speech recognition. The project's ultimate goal is to develop an AI assistant that can interact with users through video and text inputs.
+As we said, Hakeem is an Egyptian-Arabic Virtual Assistant based on two AI models: Emotion Classification and Automatic Speech Recognition (ASR). The Emotion Classification model is designed to classify facial images into seven emotion categories using the FER2013 dataset. The ASR model utilizes the HuBERT Model for Arabic speech recognition. The project's ultimate goal is to develop an AI assistant that can interact with users through video and text inputs.
 
 **Emotion Classification**
 Hakeem's Emotion Classification model is trained on the FER2013 dataset, which contains facial images labeled with seven emotion categories. The model is capable of accurately classifying unseen facial images into the following emotions: Anger, Disgust, Fear, Happiness, Sadness, Surprise, and Neutral.
