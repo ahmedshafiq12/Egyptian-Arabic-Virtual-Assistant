@@ -178,6 +178,8 @@ We have developed a chatbot using the Hugchat API. This API has been instrumenta
 **Hugchat API Overview**
 The Hugchat API offers a comprehensive set of tools and capabilities for building chatbot applications. It provides a user-friendly interface to interact with the chatbot and facilitates seamless communication between the user and the system. The API handles the complex logic of processing user queries and generating appropriate responses.
 
+![maxresdefault](https://github.com/theonlyshafiq/NTI-FinalProject/assets/63657698/8d2f1c66-60d7-4c7d-b31d-c434703038df)
+
 **LAMMA2 Overview**
 Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 70B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.
 
