@@ -178,6 +178,9 @@ We have developed a chatbot using the Hugchat API. This API has been instrumenta
 **Hugchat API Overview**
 The Hugchat API offers a comprehensive set of tools and capabilities for building chatbot applications. It provides a user-friendly interface to interact with the chatbot and facilitates seamless communication between the user and the system. The API handles the complex logic of processing user queries and generating appropriate responses.
 
+**LAMMA2 Overview**
+Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 70B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.
+
 **LAMMA2 Model**
 For our chatbot implementation, we have employed the LAMMA2 model. This model is notable for its extensive parameter count, consisting of 70 billion parameters. It has been trained on a large corpus of data from Meta, ensuring a rich contextual understanding of diverse topics.
 
