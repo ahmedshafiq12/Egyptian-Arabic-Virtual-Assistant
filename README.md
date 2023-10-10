@@ -110,18 +110,10 @@ These preprocessing steps are crucial in preparing the FER2013 dataset for subse
 We present the process of training a VGG19 model on the FER2013 dataset to recognize seven basic human emotions: anger, happiness, sadness, surprise, disgust, fear, and neutral. The VGG19 model is a widely used convolutional neural network architecture known for its excellent performance in image classification tasks.
  
 **VGG19 Model Configuration and Training**
-Imported the VGG19 model architecture from a deep learning framework, such as TensorFlow or Keras.
-Added necessary modifications to the VGG19 model to adapt it for emotion recognition.
+Imported the VGG19 model architecture from Keras.
 Initialized the model with pre-trained weights to leverage the knowledge learned from ImageNet.
-Fine-tuned the model by freezing some layers and training the remaining layers using the FER2013 dataset.
+Fine-tuned the model by freezing some layers and training the last two layers using the FER2013 dataset.
 Employed appropriate data augmentation techniques, such as random rotation, scaling, and flipping, to enhance the model's generalization capabilities.
-Compiled the model with a suitable loss function, such as categorical cross-entropy, and an optimizer, such as Adam or SGD.
-Trained the model on the training set for a specified number of epochs, monitoring training and validation accuracy during the process.
-
-**VGG19 Model Evaluation**
-Assessed the model's performance on the validation set by computing accuracy, precision, recall, and F1-score for each emotion category.
-Fine-tuned hyperparameters, such as learning rate, batch size, and dropout rate, based on the validation results to improve the model's performance.
-Conducted multiple iterations of training and validation until satisfactory performance was achieved.
 
 **VGG19 Testing and Results**
 Evaluated the final trained model on the unseen testing set to obtain an unbiased measure of its performance.
