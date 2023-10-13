@@ -1,4 +1,4 @@
-# **"Hakeem | حكيم" - Your trusted partner**
+# Hakeem | حكيم" - Your trusted partner
 Welcome to **Hakeem**, your new Egyptian-Arabic Virtual Assistant! Hakeem is designed to simplify your life. With advanced features and natural language processing, it helps manage tasks, provides recommendations, and keeps you organized. Our advanced AI system leverages the latest developments in computer vision, speech recognition, and natural language processing to create a comprehensive personalized, enjoyable and daily assistance experience.
 
 ## Berifly: How it Works
@@ -13,13 +13,14 @@ Once Hakeem has analyzed both your facial expressions and transcribed your words
 - Accessible and Convenient: No need to schedule appointments or travel. Hakeem is available whenever you need support, right from your own device.
 - Multi-Modal Analysis: By combining facial emotion recognition and speech-to-text conversion, Hakeem gains a holistic understanding of your emotional state and the content of your speech.
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Hakeem Demo <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+## Demo
+https://github.com/theonlyshafiq/Egyptian-Arabic-Virtual-Assistant/assets/90681796/a1496ab6-b484-4cf5-b4c3-e44fba232456
 
 **Important Disclaimer**: Hakeem is an AI-based virtual assistant designed to assist individuals in their mental health journey. However, it is not a substitute for professional medical or psychological advice. If you are experiencing severe mental health issues, please consult a qualified healthcare professional.
 
 So, now let's discover the magic behind **"Hakeem | حكيم"** and see the detailed overview of its components.
 
-# **Introduction**
+# Introduction
 As we said, Hakeem is an Egyptian-Arabic Virtual Assistant based on two AI models: Emotion Classification and Automatic Speech Recognition (ASR). The Emotion Classification model is designed to classify facial images into seven emotion categories using the FER2013 dataset. The ASR model utilizes the HuBERT Model for Arabic speech recognition. The project's ultimate goal is to develop an AI assistant that can interact with users through video and text inputs.
 
 **Emotion Classification**
@@ -61,7 +62,7 @@ Hakeem's architecture consists of three main components: emotion recognition, sp
 1. The English response from the HugChat API is passed through the Google Translate API.
 2. The Google Translate API translates the response from English to Arabic.
 
-# **Data Collection**
+# Data Collection
 In Hakeem, we collected videos from YouTube featuring Egyptian Arabic speakers from various channels and diverse content. These videos were selected to ensure a wide range of speech patterns, accents, and topics. Importantly, each video was accompanied by subtitles or closed captions.
 
 **Audio Extraction**
@@ -85,7 +86,7 @@ Here is a short sample of our collected dataset:
 |1_3_cropped.flac	| !عايز إيه؟ |
 |1_4_cropped.flac	| ."أنا عايز "ليجو |
 
-# **Data Preprocessing**
+# Data Preprocessing
 We have 2 major datasets that Hakeem is trained on, **the FER2013 dataset** and **our collected YouTube dataset**. In our collected YouTube dataset, we have 2 columns; the first one contains the audio path, and the second one contains the written text that is being said in this audio. As we can see from the short sample above we have in the `label` column some non-helpful marks and special characters, so, as a preprocessing step we remove all non-alphabet characters since they don't add value or contribute to our model's predictions.  
 
 In the FER2013 dataset, which contains facial images labeled with seven emotion categories. We have performed various preprocessing steps on the FER2013 dataset. These steps include rescaling, zooming, and data cleansing to ensure the data is suitable for further analysis and modeling. Preprocessed the dataset by resizing the images to a standard size and normalizing pixel values to improve model performance.
@@ -101,7 +102,7 @@ To ensure the quality of the dataset, we have performed data cleansing operation
 
 These preprocessing steps are crucial in preparing the FER2013 dataset for subsequent analysis and model training. The resulting dataset is now ready to be used for tasks such as emotion recognition or facial expression classification.
 
-# **Models Used**
+# Models Used
 
 ## **VGG19 Model**
 ![1_NNifzsJ7tD2kAfBXt3AzEg](https://github.com/theonlyshafiq/NTI-FinalProject/assets/90681796/ba52a9c4-7730-4316-8938-adce24303530)
@@ -151,7 +152,7 @@ Here are some examples to see the difference before and after the fine-tuning:
 |الكلام دا مقابل تذاكر الناس بتدفع فلوس عشان تتفرج على مجانين | كلام ده مقابل تذاكر الناس بيطع فلوس عشان تفر على بجانين | كلام ده مقابل تذاكر الناس بتتفع فلوس عشان تفرج على مجانين |
 |اوعا تكون من الناس اللي بتبيع كـــل ده | اوعه تكون من الناس اللي بتبيعكول ده | اوعه تكون من الناس اللي بتبيع كل دا |
 | وأنت هتتصرف بالطريقة دي في الحالة دي | وأنت هتصف بلطريقة دي في لحالة ديه | وانت حتتصرف بالطريقة دي في الحالة دي |
-|هنا كريستين بتواسي جوزها وتقوله المهم إن ما حدش مننا مات | هنا كرست بتوسيجزها تقوله المه م إن م حد ش ميننا مات | هناكرستي بتوسي جزهاوتقول لا المهم  ن ما حدش مننا مات |
+|هنا كريستين بتواسي جوزها وتقوله المهم إن ما حدش مننا مات | هنا كرست بتوسيجزها تقوله المه م إن م حد ش ميننا مات | هنا كرستي بتوسي جزها وتقوله المهم  ن ما حدش مننا مات |
 
 Details on the steps taken to handle challenges specific to Egyptian Arabic accents:
 To address the challenges posed by Egyptian Arabic accents, the training dataset was carefully curated to include diverse speakers with different accents and speech patterns. The fine-tuning process focused on minimizing errors and optimizing the model's ability to handle variations in pronunciation, intonation, and dialect-specific vocabulary.
@@ -173,7 +174,7 @@ The Hugchat API offers a comprehensive set of tools and capabilities for buildin
 ![LLAMA2 By Meta & Microsoft](https://github.com/theonlyshafiq/NTI-FinalProject/assets/63657698/8d2f1c66-60d7-4c7d-b31d-c434703038df)
 
 **LAMMA2 Overview**
-Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 70B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.
+Llama 2 is a collection of pre-trained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 70B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format.
 
 **LAMMA2 Model**
 For our chatbot implementation, we have employed the LAMMA2 model. This model is notable for its extensive parameter count, consisting of 70 billion parameters. It has been trained on a large corpus of data from Meta, ensuring a rich contextual understanding of diverse topics.
@@ -190,9 +191,7 @@ Please note that the accuracy and quality of translations may depend on the Goog
 # **Evaluation and Results**
 Hakeem's performance was evaluated using various metrics, including speech recognition accuracy, chatbot response coherence, and emotion recognition accuracy. Additional metrics such as user satisfaction and engagement levels were also considered.
 
-
-
-# **Deployment**
+# Deployment
 
 The application allows users to record videos, split them into separate video and audio components, and display the recorded video in a label widget. The primary functionality is achieved through the implementation of two buttons: "Start Recording" and "Stop Recording".
 Installing PyQt5 and Required Dependencies
