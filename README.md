@@ -1,10 +1,10 @@
-# Hakeem | حكيم" - Your trusted partner
-Welcome to **Hakeem**, your new Egyptian-Arabic Virtual Assistant! Hakeem is designed to simplify your life. With advanced features and natural language processing, it helps manage tasks, provides recommendations, and keeps you organized. Our advanced AI system leverages the latest developments in computer vision, speech recognition, and natural language processing to create a comprehensive personalized, enjoyable and daily assistance experience.
+# "Hakeem | حكيم" - Your Trusted Partner
+Welcome to **Hakeem**, your new Egyptian-Arabic Virtual Assistant! Hakeem is designed to simplify your life. With advanced features and natural language processing, it helps manage tasks, provides recommendations, and keeps you organized. Our advanced AI system leverages the latest developments in computer vision, speech recognition, and natural language processing to create a comprehensive personalized, enjoyable, and daily assistance experience.
 
 ## Berifly: How it Works
 The magic begins when you share a video of yourself with Hakeem. Our intelligent system seamlessly splits the video frames from the audio track, paving the way for a deeper analysis of your emotions and words. The video frames are then passed through our state-of-the-art facial emotion recognizer, which meticulously studies your facial expressions to discern the range of emotions you're experiencing. Simultaneously, the audio signal is fed into our powerful speech-to-text model, which converts your spoken words into written text. 
 
-Once Hakeem has analyzed both your facial expressions and transcribed your words, it's time for the heart of the therapy session: the **empathetic conversation**. Hakeem's chatbot interface utilizes the combined insights from your emotions and words to initiate and guide a conversation tailored specifically to your needs. Our virtual therapist engages with you, offering insightful advice, compassionate support, and practical solutions to help you overcome challenges and improve your well-being.
+Once Hakeem has analyzed both your facial expressions and transcribed your words, it's time for the heart of the therapy session: the **empathetic conversation**. Hakeem's chatbot interface utilizes the combined insights from your emotions and words to initiate and guide a conversation explicitly tailored to your needs. Our virtual therapist engages with you, offering insightful advice, compassionate support, and practical solutions to help you overcome challenges and improve your well-being.
 
 ## Features and Benefits
 - Personalized Assistant: Hakeem learns from your interactions and provides tailored recommendations, whether it's suggesting relevant content, local services, or personalized product recommendations.
@@ -24,7 +24,7 @@ So, now let's discover the magic behind **"Hakeem | حكيم"** and see the deta
 As we said, Hakeem is an Egyptian-Arabic Virtual Assistant based on two AI models: Emotion Classification and Automatic Speech Recognition (ASR). The Emotion Classification model is designed to classify facial images into seven emotion categories using the FER2013 dataset. The ASR model utilizes the HuBERT Model for Arabic speech recognition. The project's ultimate goal is to develop an AI assistant that can interact with users through video and text inputs.
 
 **Emotion Classification**
-Hakeem's Emotion Classification model is trained on the FER2013 dataset, which contains facial images labeled with seven emotion categories. The model is capable of accurately classifying unseen facial images into the following emotions: Anger, Disgust, Fear, Happiness, Sadness, Surprise, and Neutral.
+Hakeem's Emotion Classification model is trained on the FER2013 dataset, which contains facial images labeled with seven emotion categories. The model can accurately classify unseen facial images into the following emotions: Anger, Disgust, Fear, Happiness, Sadness, Surprise, and Neutral.
 
 **Automatic Speech Recognition (ASR)**
 Hakeem employs the HuBERT Model for Arabic speech recognition. The ASR model is trained to transcribe spoken Arabic language into text. It undergoes a two-stage training process, starting with pre-training on a large corpus of Egyptian Arabic text data to learn language patterns and nuances. It is then fine-tuned on a smaller dataset specific to the ASR task.
