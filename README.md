@@ -86,6 +86,8 @@ Here is a short sample of our collected dataset:
 |1_3_cropped.flac	| !عايز إيه؟ |
 |1_4_cropped.flac	| ."أنا عايز "ليجو |
 
+The dataset has been uploaded to Kaggle, and you can find it at this [link](https://www.kaggle.com/datasets/ahmedshafiq12/egyptian-audio-dataset-collected-from-youtube).
+
 # Data Preprocessing
 We have 2 major datasets that Hakeem is trained on, **the FER2013 dataset** and **our collected YouTube dataset**. In our collected YouTube dataset, we have 2 columns; the first one contains the audio path, and the second one contains the written text that is being said in this audio. As we can see from the short sample above we have in the `label` column some non-helpful marks and special characters, so, as a preprocessing step we remove all non-alphabet characters since they don't add value or contribute to our model's predictions.  
 
